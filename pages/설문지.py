@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 # 1. 페이지 레이아웃 설정
@@ -9,7 +10,7 @@ st.markdown("---")
 
 # 2. st.form을 사용하여 10문항 배치
 with st.form("media_survey"):
-    st.header(" 1: 현재 나의 감정 및 에너지")
+    st.header("🧠 1부: 현재 나의 감정 및 에너지")
     
     q1 = st.radio(
         "Q1. 오늘 하루를 마무리하는 지금, 당신의 심리 상태에 가장 가까운 것은?",
@@ -30,7 +31,7 @@ with st.form("media_survey"):
     )
     
     st.markdown("---")
-    st.header("2: 스토리 및 캐릭터 취향")
+    st.header("🧬 2부: 스토리 및 캐릭터 취향")
     
     q4 = st.radio(
         "Q4. 어떤 유형의 주인공에게 가장 마음이 가고 몰입이 되나요?",
@@ -45,7 +46,7 @@ with st.form("media_survey"):
     )
     
     st.markdown("---")
-    st.header("3: 미디어 연출 및 몰입 요소")
+    st.header("🎨 3부: 미디어 연출 및 몰입 요소")
     
     q7 = st.multiselect(
         "Q7. 작품의 매력을 결정하는 가장 중요한 요소는? (최대 2개)",
@@ -86,4 +87,3 @@ if submitted:
     st.balloons()
     st.subheader(f"📊 당신의 매칭 유형: **{user_type}**")
     st.info(f"추천하는 인생 미디어: **{recommend_media}**")
-    
