@@ -1,3 +1,3 @@
 import streamlit as st
-st.title('제목')
-st.write('## 부제목')
+st.title('성포고등학교')
+st.write('## 30302 구현지')
